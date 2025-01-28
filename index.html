@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contrôle Maison Connectée</title>
+</head>
+<body>
+    <h1>Contrôle de la Maison Connectée</h1>
+    <form action="/controler_fenetre" method="post">
+        <label for="action">Contrôle des fenêtres :</label>
+        <select name="action" id="action">
+            <option value="ouvrir">Ouvrir</option>
+            <option value="fermer">Fermer</option>
+        </select>
+        <button type="submit">Envoyer</button>
+    </form>
+    <br>
+    <form action="/controler_led" method="post">
+        <label for="etat">Contrôle de la LED :</label>
+        <select name="etat" id="etat">
+            <option value="on">Allumer</option>
+            <option value="off">Éteindre</option>
+        </select>
+        <button type="submit">Envoyer</button>
+    </form>
+</body>
+</html>
