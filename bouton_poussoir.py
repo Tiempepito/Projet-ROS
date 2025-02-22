@@ -25,7 +25,7 @@ class BoutonClient(Node):
             self.get_logger().info(f"LED : {response.message}")
         except Exception as e:
             self.get_logger().error(f"Échec de la requête : {str(e)}")
-    
+    #Fonction prise sur Internet pour le serveur client avec la touche espace du clavier 
     def keyboard_listener(self):
         self.get_logger().info("Appuyez sur ESPACE pour allumer/éteindre la LED (CTRL+C pour quitter)")
         
